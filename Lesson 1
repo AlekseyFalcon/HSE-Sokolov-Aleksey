@@ -1,0 +1,9 @@
+n= int(input("Введите число n (от 1 до 9):"))
+
+if 1 <= n <= 9:
+    nn = int(str(n) * 2)
+    nnn = int(str(n) * 3)
+    result = n+nn+nnn
+    print(f"Результат: {result}")
+else:
+    print("Введено некорректное число.Введите число от 1 до 9")
