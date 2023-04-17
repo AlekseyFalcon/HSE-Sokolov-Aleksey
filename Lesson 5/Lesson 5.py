@@ -34,7 +34,7 @@ inn_person_pattern = re.compile(r'\b\d{12}\b')
 
 
 def task_2():
-    with open("10000_efrsb_messages.json", "r") as f:
+    with open("1000_efrsb_messages.json", "r") as f:
         msgs = json.load(f)
     results = {}
     for i in msgs:
