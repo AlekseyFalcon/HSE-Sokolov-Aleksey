@@ -28,7 +28,7 @@ def task_2():
         msgs = json.load(f)
 
     # Создаем регулярное выражение для поиска email
-    email_pattern = re.compile(r'\b[0-9a-zA-Z.-_]+@[0-9a-zA-Z.-_]+\.[a-zA-Z]+\b')
+    email_pattern = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
 
     # Создаем словарь, где ключи - email, а значения - список уникальных ИНН организаций, которые связаны с данным email.Все email приведены в нижний регистр.
     result = {}
