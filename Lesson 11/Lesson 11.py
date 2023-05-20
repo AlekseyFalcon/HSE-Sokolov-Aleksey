@@ -1,5 +1,6 @@
 import requests
 
+
 class SirotinskyAPI:
     def __init__(self, login: str, password: str):
         self.token = self._get_token(login, password)
