@@ -19,7 +19,7 @@ class ParserCBRF:
 
     def _get_page_content(self, url):
         response = requests.get(url)
-        response.raise_for_status()  # Если статус ответа не 200, поднимет исключение HTTPError
+        response.raise_for_status()
         return response.content
 
     def _extract_links(self, page_content):
